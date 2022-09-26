@@ -307,6 +307,12 @@ main section article i{
         justify-content: space-around;
         align-items: stretch;
     }
+    .Footer{
+        display: flex;
+    }
+    .Footer section{
+        margin: 0px 5px;
+    }
 }
 
 /* Register */
