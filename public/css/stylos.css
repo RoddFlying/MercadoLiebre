@@ -351,23 +351,35 @@ main section article i{
 .formulario form .xPerfil label{
     font-size: 12px;
     font-weight: normal;
+    
 }
-
-.formulario form .buttonsub{
+.foto {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
 }
-.formulario form .buttonsub button{
-    background-color: #1259C3;
+.buttonsub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ebebeb;
+}
+.buttonsub button{
+    background-color: blue;
     color: #ffffff;
     padding: 15px;
     font-weight: bold;
     font-family: 18px;
     border-radius: 5px;
 }
-.formulario form .buttonsub button a{
+.buttonsub button a{
     color: #ffffff;
     font-weight: bold;
     font-family: 18px;
@@ -377,12 +389,12 @@ main section article i{
 
 /* login */ 
 
-.login{
+.login1 {
     background-color: #ebebeb;
     width: 100%;
     margin-top: 200px;
 }
-.login form{
+.login1 form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -391,23 +403,23 @@ main section article i{
     margin: auto;
     margin-top: 0%;
 }
-.login form label{
+.login1 form label{
     font-size: 16px;
     font-weight: bold;
     margin: 10px 0;
 }
-.login form input{
+.login1 form input{
     font-size: 14px;
     padding: 10px;
 }
 
-.login form .butonin{
+.login1 form .butonin{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.login form button{
-    background-color: #1259C3;
+.login1 form button{
+    background-color: blue;
     color: #ffffff;
     padding: 15px;
     font-weight: bold;
@@ -417,7 +429,7 @@ main section article i{
     width: 100%;
 }
 
-.login form a{
+.login1 form a{
     text-decoration: none;
     color: #ffffff;
     padding: 15px;
