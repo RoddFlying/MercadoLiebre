@@ -1,0 +1,426 @@
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris oscuro: #666;
+    --Gris claro: #ebebeb;
+    --Verde: #39b54a;
+}
+header {
+    background-color: #EAC926;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.ContenedorTotal{
+    background-color: #EAC926;
+    padding:20px;
+}
+
+body {
+     font-family: 'roboto', sans-serif;
+     font-size: 12px;
+}
+
+.copyheader {
+    font-weight: 400;
+    text-align: center;
+}
+
+.tipografia {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.tipografia a{
+   width: 50%;
+}
+.logo{
+    animation: 2s linear infinite alternate;
+    width: 200px;
+}
+
+.buscar input {
+    padding: 6px 6px;
+}
+
+.buscar {
+   width:50%;
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.burger-menu {
+    color: #ffffff;
+    background-color: #03264C;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;   
+}
+.burger-menu i {
+    color: white;
+    margin-bottom: 0px;
+}
+
+.mainnav-bar{
+    display: none;
+}
+
+.mainnav-bar ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.mainnav-bar a{
+text-decoration: none;
+color: #222222;
+display: inline-block;
+padding: 5px 0;
+font-size: 17px;
+}
+
+.UltimaVisita {
+    font-size: 24px;
+}
+.Precios {
+    font-size: 18px;
+}
+.DescuentosDescripciones {
+    font-size: 16px;
+}
+
+.Footer {
+text-align: center;
+}
+.Card i{
+    font-size: 2em;
+    color: #1259C3;
+    transition: all 0.7s;
+}
+
+
+
+
+/*Productos*/
+
+main {
+    align-items: center ;
+    display: block;
+}
+
+main h2 {
+width: 90%;
+margin:15px;
+margin: auto;
+padding:30px;
+text-align: center;
+
+}
+main section {
+
+    width: 90%; 
+    margin: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+i {
+    width:2em;
+    margin-bottom: 10px;
+    
+}
+
+.UltimaVisita {
+    font-size: 24px;
+    color: #666;
+    font-weight: bold;
+
+}
+
+
+.items img {
+    box-shadow: 0px 0px 50px rgb(100, 100, 100);
+    width:100%;
+}
+
+.detalle {
+    border-top: solid 1px #ebebeb;
+}
+
+.price {
+    margin:10px;
+    display:flex;    
+    justify-content: space-between;
+}
+.descuento {
+    font-size: 20px;
+    color: #39b54a;
+}
+.price1 {
+    font-size: 30px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   }
+   
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top:-15;
+}
+
+
+/* */
+
+
+
+
+/*TABLET*/
+@media (min-width: 768px){
+   
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+    .tipografia {
+        
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .copyheader{
+        max-width: 350px;
+        text-align: right;
+    }
+    .burger-menu {
+        display:none;
+    }
+    .mainnav-bar {
+        display:flex;
+        justify-content: space-between;
+    }
+    .mainnav-bar ul {
+      display: flex;  
+    }
+    .mainnav-bar li {
+        margin: 0 5px;  
+      }
+     
+    main section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch; 
+    }
+    .items {
+        width:50%;
+       
+    }
+
+    .header1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+       
+    }
+    .compras {
+    /*  max-width: 250px;
+        text-align: right; */
+    }
+    .compras h2 {
+        
+   }
+   
+
+
+
+/*WEB*/
+
+@media (min-width: 1100px ) {
+    
+    .logo {
+     width: 250px;
+
+    }
+    .tipografia, .mainnav-bar {
+      max-width: 1200px;
+      
+      margin:auto;
+    }
+
+    .tipografia {
+    align-items: center;
+
+    }
+    .mainnav-bar{
+        margin-top: 30px;
+    }
+    .mainnav-bar li {
+        margin: 0 10px;  
+      }
+    
+      .mainnav-bar a {
+        margin: 0 10px;
+        font-size: 20px;  
+      }
+
+      .copyheader{
+        max-width: none;
+       font-size: 18px;
+       font-weight: 400;
+       margin: 0;
+    }
+    .items {
+        width: 23%;
+        min-width: 18%;
+    }
+    main section {
+        
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+}
+
+/* Register */
+
+.formulario {
+    background-color: #ebebeb;
+    width: 100%;
+    margin-top:200px;
+
+}
+
+.formulario form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px;
+    width: 90%;
+    margin: auto;
+    margin-top: 0%;
+}
+.formulario form label{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.formulario form input{
+    font-size: 12px;
+    padding: 10px;
+}
+
+.formulario form .ejemplocheckbox{
+    margin-top: 5px;
+}
+
+.formulario form .etPerfil{
+    margin-top: 5px;
+} 
+.formulario form .etCheckbox label{
+    font-size: 12px;
+    font-weight: normal;
+}
+.formulario form .xPerfil label{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.formulario form .buttonsub{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.formulario form .buttonsub button{
+    background-color: #1259C3;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: bold;
+    font-family: 18px;
+    border-radius: 5px;
+}
+.formulario form .buttonsub button a{
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 18px;
+    text-decoration: none;
+
+}
+
+/* login */ 
+
+.login{
+    background-color: #ebebeb;
+    width: 100%;
+    margin-top: 200px;
+}
+.login form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px;
+    width: 70%;
+    margin: auto;
+    margin-top: 0%;
+}
+.login form label{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.login form input{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.login form .butonin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.login form button{
+    background-color: #1259C3;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: bold;
+    font-family: 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.login form a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: bold;
+    font-family: 18px;
+}
