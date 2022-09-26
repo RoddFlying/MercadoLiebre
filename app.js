@@ -3,12 +3,6 @@ const path = require('path')
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '/public')))
-
-app.listen(3000, () => 
-console.log ('Corriendo')
-);
-
 app.get ('/', (req, res) => { res.sendFile (path.join(__dirname, '/views/home.html' ))
     });
 
@@ -17,3 +11,9 @@ app.get ('/register', (req, res) => { res.sendFile (path.join(__dirname, '/views
 
 app.get ('/login', (req, res) => { res.sendFile (path.join(__dirname, '/views/login.html' ))
 });
+
+app.use(express.static(path.join(__dirname, '/public')))
+
+app.listen(process.env.PORT || 3000, () => 
+console.log ('Corriendo')
+);
